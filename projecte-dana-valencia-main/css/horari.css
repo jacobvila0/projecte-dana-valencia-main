@@ -3,51 +3,67 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Estils per al header amb espai entre els elements */
+body{
+    background-color: rgb(90, 90, 90);
+    text-align: center;
+}
+
 header{
     width: 100%;
-    height: 150px;
+    height: 140px;
     background-color: rgb(29, 28, 28);
-    border-bottom: solid 3px rgb(0, 0, 0);
+    border-bottom: solid 3px black;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 header h1{
-    padding: 20px;
-    height: 75px;
-    font-size: 40px; 
-    text-align: center;
-    margin-top: 25px;
-    margin-left: 50px;
     color: white;
+    font-size: 38px;
+    margin-left: 40px;
 }
 
-/* Estils per al logo que es mostre redonet i pegat a la dreta */
 #logo{
-    
-    flex-direction: row-reverse;
-    margin: 30px;
-    width: 80px;
-    height: 80px;
+    width: 85px;
+    height: 85px;
     border-radius: 50%;
+    margin-right: 30px;
 }
 
-/* Estils per al menu de navegacio lateral */
+main{
+    width: 100%;
+    background-color: black;
+    overflow: hidden;
+}
+
+section{
+    width: 78%;
+    float: left;
+    background-color: rgb(147, 148, 147);
+    padding: 15px;
+    min-height: 1100px;
+}
+
+aside{
+    width: 22%;
+    float: left;
+    background-color: rgb(69, 69, 70);
+    min-height: 1100px;
+    border-left: solid 3px black;
+    padding: 10px;
+}
+
 nav{
-    height: 100%;
-    text-align: center;
-    align-content: center;
+    margin-top: 15px;
+    margin-bottom: 25px;
 }
 
 li{
     list-style: none;
-    padding: 10px;
-    margin-top: 10px;
     margin-bottom: 10px;
 }
 
@@ -61,250 +77,125 @@ a{
 
 a:hover{
     background-color: rgb(46, 44, 44);
-    color: rgb(226, 224, 224)
-    
-}
-
-/* Estils per al footer pegat al final de la pàgina i de forma fixa */
-.peu_pagina{
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    height: 20px;
-    background-color: rgb(29, 28, 28);
-    text-align: center;
-    color: rgb(133, 132, 132);
-    font-size: 15px;
-     align-content: center;
-}
-
-body {
-    height: auto;
-    text-align: center;
-          
 }
 
 #titulo_periodicos{
     background-color: rgb(133, 133, 133);
     padding: 10px;
+    margin-bottom: 15px;
+}
+
+#avis-principal,
+.contenidor-taula,
+#targetas-generales{
+    background-color: rgb(133, 133, 133);
+    border-radius: 10px;
+    box-shadow: 6px 6px 4px rgb(110, 110, 110);
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+#avis-principal{
+    text-align: left;
+}
+
+#avis-principal p{
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+.contenidor-taula{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th{
+    background-color: rgb(90, 90, 90);
+    color: white;
+    padding: 12px;
+}
+
+td{
+    background-color: rgb(210, 210, 210);
+    padding: 12px;
+    border: solid 1px rgb(100, 100, 100);
+}
+
+.tancat{
+    color: rgb(150, 30, 30);
+    font-weight: bold;
+}
+
+#targetas-generales{
+    overflow: hidden;
+}
+
+#targetas-generales h2{
+    margin-bottom: 15px;
+}
+
+.targeta-informativa{
+    width: 47%;
+    float: left;
+    background-color: rgb(180, 180, 180);
+    padding: 15px;
+    margin: 10px;
+    border-radius: 8px;
+}
+
+.targeta-informativa h2{
+    font-size: 20px;
     margin-bottom: 10px;
-    
 }
 
-/* Estils per al contingut principal amb seccio, aside i main*/
+.targeta-informativa a{
+    color: black;
+    padding: 0;
+}
 
-main{
+.targeta-informativa a:hover{
+    background-color: transparent;
+    color: rgb(120, 30, 30);
+}
+
+.targeta-informativa p{
+    text-align: left;
+    line-height: 1.5;
+}
+
+.peu_pagina{
     width: 100%;
-    background-color: rgb(0, 0, 0);
-    height: 1350px;
-    
-}
-
-
-
-section{
-    width: 80%;
-    background-color: rgb(147, 148, 147);
-    float: left;
-    height: 100%;
-    padding: 10px;
-    
-}
-
-aside{
-    width: 20%;
-    background-color: rgb(69, 69, 70);
-    float: left;
-    height: 50%;
-    border-left: solid 3px black;
-    
-}
-
-aside div{
-    background-color: rgb(69, 69, 70);
-    height: 100%;
-    box-sizing: border-box;
-    
-}
-
-div h3{
-    padding: 10px;
-    background-color: rgb(133, 133, 133);
-
-}
-
-div ul{
-    margin-top: 30px;
-}
-
-section img {
-height: auto;
-width: auto;
-
-}
-
-
-/* Selector d'ID per a la secció d'informació */
-#info-dana {
-padding: 25px;
-max-width: 900px;
-margin: 0 auto;
-}
-/* Selector de classe per al contenidor que envolta la taula */
-.contenidor-taula {
-margin: 40px auto;
-width: 95%;
-}
-/* Selector descendent per a les cel·les de capçalera dins de la taula */
-table th {
-background-color: #d9534f;
-color: white;
-padding: 15px;
-}
-/* Selector d'atribut per a elements amb el títol específic */
-h1[title="titol-principal"] {
-letter-spacing: 1px;
-}
-/* Pseudo-classe per canviar el color en passar el ratolí */
-.tancat:hover {
-color: #a94442;
-}
-/* Pseudo-element per afegir un detall visual després del subtítol */
-h2::after {
-content: " | València";
-color: #e67e22;
-font-size: 0.8em;
-}
-
-
-
-
-/* Propietats de posicionament i vora amb imatge degradada */
-table {
-display: table;
-position: relative;
-border-collapse: collapse;
-
-border: 8px solid;
-border-image: linear-gradient(to right, #d9534f, #f0ad4e) 1;
-}
-/* Ús de gradients radials, ombres de text i de caixa */
-h2 {
-text-shadow: 3px 3px 6px rgba(0,0,0,0.2);
-background: radial-gradient(circle, #ffffff, #eeeeee);
-}
-/* Ús de vores arredonides i ombres internes a les cel·les */
-td {
-padding: 20px;
-text-align: center;
-border: 1px solid #ccc;
-border-radius: 4px;
-box-shadow: inset 2px 2px 5px rgba(0,0,0,0.05);
-}
-
-
-
-
-/* Selector de germà adjacent per donar estil al paràgraf que segueix a un altre */
-p + p {
-font-weight: bold;
-color: #444;
-}
-/* Ús de nth-child amb opcions parell i senar per a les files de la taula */
-table tbody tr:nth-child(even) {
-background-color: #fcfcfc;
-}
-table tbody tr:nth-child(odd) {
-background-color: #f2f2f2;
-}
-/* Ús de flexbox per a la disposició dels elements informatius */
-#info-dana {
-display: flex;
-flex-direction: column;
-align-items: center;
-text-align: center;
-}
-/* Transformacions i transicions per a l'efecte visual en la taula */
-table tr {
-transition: transform 0.4s ease-in-out, background-color 0.3s;
-}
-table tr:hover {
-transform: scale(1.02);
-background-color: #fff0f0 !important;
-cursor: default;
-}
-
-
-.contenidor-taula {            
-    overflow-x: auto;        
-    display: flex;  
-    justify-content: center; 
-    align-items: center;
-}
-
-/* --- ESTIL DELS RECUADRES GRISOS AMB BORDES --- */
-
-.targeta-informativa {
-    background-color: #808080 ; /* Gris unificat segons imatges */
-    padding: 25px;
-    width: 35%;
-    box-sizing: border-box;
-    color: #000000;
-    float: left;
-    margin: 20px;
-    
-    /* Fase 4: Borde amb gradient taronja-roig de la paleta */
-    background-color: rgb(133, 133, 133);
-    border-radius: 10px;
-    box-shadow: 10px 10px 5px rgb(124, 124, 124);
-    
-    /* Fase 4: Ombra de caixa per donar profunditat */
-    box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+    background-color: rgb(29, 28, 28);
     text-align: center;
+    color: rgb(200, 200, 200);
+    font-size: 14px;
+    padding: 8px;
+    clear: both;
 }
 
+@media (max-width: 800px){
+    section,
+    aside,
+    .targeta-informativa{
+        width: 100%;
+        float: none;
+        min-height: auto;
+        margin: 0 0 15px 0;
+    }
 
+    header{
+        height: auto;
+        padding: 20px;
+        flex-direction: column;
+        gap: 15px;
+    }
 
-/* --- ANIMACIÓ DE TRANSICIÓ I TRANSFORMACIÓ (Fase 5) --- */
+    header h1{
+        margin-left: 0;
+        font-size: 30px;
+    }
 
-.enllac-titol {
-    text-decoration: none;
-    color: inherit;
-    display: inline-block;
-    width: 100%;
-    cursor: pointer;
-    
-    /* Definició de la transició suau per al moviment i el color */
-    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), color 0.3s;
-}
-
-/* Efecte al passar el ratolí o presionar el títol */
-.enllac-titol:hover {
-    /* Transformació: escala l'element i el desplaça horitzontalment */
-    transform: scale(1.05) translateX(15px);
-    color: #d9534f; /* Canvi al roig de la paleta */
-}
-
-section{
-    background-color: grey;
-}
-#targetas-generales {
-    background-color: rgb(133, 133, 133);
-    border-radius: 10px;
-    box-shadow: 10px 10px 5px rgb(124, 124, 124);
-    padding: 20px;
-    height: 730px;
-}
-
-#avis-principal {
-    margin: 20PX;
-    padding: 20px;
-    background-color: rgb(133, 133, 133);
-    border-radius: 10px;
-    box-shadow: 10px 10px 5px rgb(124, 124, 124);
-}
-
-#titol-targetes  {
-    margin-bottom: 20px;  
-    display: block;
+    #logo{
+        margin-right: 0;
+    }
 }

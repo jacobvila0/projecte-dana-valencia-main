@@ -3,51 +3,67 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Estils per al header amb espai entre els elements */
+body{
+    background-color: rgb(90, 90, 90);
+    text-align: center;
+}
+
 header{
     width: 100%;
-    height: 150px;
+    height: 140px;
     background-color: rgb(29, 28, 28);
-    border-bottom: solid 3px rgb(0, 0, 0);
+    border-bottom: solid 3px black;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 header h1{
-    padding: 20px;
-    height: 75px;
-    font-size: 40px; 
-    text-align: center;
-    margin-top: 25px;
-    margin-left: 50px;
     color: white;
+    font-size: 38px;
+    margin-left: 40px;
 }
 
-/* Estils per al logo que es mostre redonet i pegat a la dreta */
 #logo{
-    
-    flex-direction: row-reverse;
-    margin: 30px;
-    width: 80px;
-    height: 80px;
+    width: 85px;
+    height: 85px;
     border-radius: 50%;
+    margin-right: 30px;
 }
 
-/* Estils per al menu de navegacio lateral */
+main{
+    width: 100%;
+    background-color: black;
+    overflow: hidden;
+}
+
+section{
+    width: 78%;
+    float: left;
+    background-color: rgb(147, 148, 147);
+    padding: 15px;
+    min-height: 900px;
+}
+
+aside{
+    width: 22%;
+    float: left;
+    background-color: rgb(69, 69, 70);
+    min-height: 900px;
+    border-left: solid 3px black;
+    padding: 10px;
+}
+
 nav{
-    height: 100%;
-    text-align: center;
-    align-content: center;
+    margin-top: 15px;
+    margin-bottom: 25px;
 }
 
 li{
     list-style: none;
-    padding: 10px;
-    margin-top: 10px;
     margin-bottom: 10px;
 }
 
@@ -61,93 +77,63 @@ a{
 
 a:hover{
     background-color: rgb(46, 44, 44);
-    color: rgb(226, 224, 224)
-    
-}
-
-/* Estils per al footer pegat al final de la pàgina i de forma fixa */
-.peu_pagina{
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    height: 20px;
-    background-color: rgb(29, 28, 28);
-    text-align: center;
-    color: rgb(133, 132, 132);
-    font-size: 15px;
-     align-content: center;
-}
-
-body {
-    height: auto;
-    text-align: center;
-           
 }
 
 #titulo_periodicos{
     background-color: rgb(133, 133, 133);
     padding: 10px;
-    margin-bottom: 10px;
-    
+    margin-bottom: 15px;
 }
-
-/* Estils per al contingut principal amb seccio, aside i main*/
-
-main{
-    width: 100%;
-    background-color: rgb(0, 0, 0);
-    height: 850px;
-    
-}
-
-
-section{
-    width: 80%;
-    background-color: rgb(147, 148, 147);
-    float: left;
-    height: 100%;
-    padding: 10px;
-    
-}
-
-aside{
-    width: 20%;
-    background-color: rgb(69, 69, 70);
-    float: left;
-    height: 50%;
-    border-left: solid 3px black;
-    
-}
-
-aside div{
-    background-color: rgb(69, 69, 70);
-    height: 100%;
-    box-sizing: border-box;
-    
-}
-
-div h3{
-    padding: 10px;
-    background-color: rgb(133, 133, 133);
-
-}
-
-div ul{
-    margin-top: 30px;
-}
-/* Estils per al formulari de contacte */
 
 #titol{
-    margin-bottom: 20px;
-    padding: 10px;
     background-color: rgb(133, 133, 133);
     border-radius: 10px;
-    box-shadow: 10px 10px 5px rgb(124, 124, 124)  ;
+    box-shadow: 6px 6px 4px rgb(110, 110, 110);
+    padding: 15px;
+    margin-bottom: 20px;
 }
 
-#titol:hover{
-    background-color: rgb(169, 169, 169);
+fieldset{
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: rgb(180, 180, 180);
+    text-align: left;
+}
 
+legend{
+    background-color: rgb(68, 68, 68);
+    color: white;
+    padding: 8px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+label,
+p{
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+input,
+select,
+textarea{
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid rgb(100, 100, 100);
+}
+
+input[type="radio"],
+input[type="checkbox"]{
+    width: auto;
+    margin-right: 5px;
+}
+
+textarea{
+    resize: vertical;
 }
 
 #enviar{
@@ -161,28 +147,39 @@ div ul{
 
 #enviar:hover{
     background-color: rgb(100, 100, 100);
-    transform: rotate(-2deg) scale(1.05);
-
 }
 
-fieldset{
-    border: 2px solid black;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    padding: 10px;
-    box-shadow: 10px 10px 5px rgb(124, 124, 124)  ;
+.peu_pagina{
+    width: 100%;
+    background-color: rgb(29, 28, 28);
+    text-align: center;
+    color: rgb(200, 200, 200);
+    font-size: 14px;
+    padding: 8px;
+    clear: both;
 }
 
-legend{
-    font-weight: bold;
-    padding: 10px;
-    background-color: rgb(68, 68, 68);
-    color: rgb(218, 217, 217);
-    border-radius: 5px;
-    margin-bottom: 10px;
-}   
+@media (max-width: 800px){
+    section,
+    aside{
+        width: 100%;
+        float: none;
+        min-height: auto;
+    }
 
+    header{
+        height: auto;
+        padding: 20px;
+        flex-direction: column;
+        gap: 15px;
+    }
 
-        
+    header h1{
+        margin-left: 0;
+        font-size: 30px;
+    }
 
-
+    #logo{
+        margin-right: 0;
+    }
+}
