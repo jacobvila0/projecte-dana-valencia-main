@@ -1,0 +1,184 @@
+/* Estils generals */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+/* Estils per al header amb espai entre els elements */
+header{
+    width: 100%;
+    height: 150px;
+    background-color: rgb(29, 28, 28);
+    border-bottom: solid 3px rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+}
+
+header h1{
+    padding: 20px;
+    height: 75px;
+    font-size: 40px; 
+    text-align: center;
+    margin-top: 25px;
+    margin-left: 50px;
+    color: white;
+}
+
+/* Estils per al logo que es mostre redonet i pegat a la dreta */
+#logo{
+    
+    flex-direction: row-reverse;
+    margin: 30px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+/* Estils per al menu de navegacio lateral */
+nav{
+    height: 100%;
+    text-align: center;
+    align-content: center;
+}
+
+li{
+    list-style: none;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+a:hover{
+    background-color: rgb(46, 44, 44);
+    color: rgb(226, 224, 224)
+    
+}
+
+/* Estils per al footer pegat al final de la pàgina i de forma fixa */
+.peu_pagina{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 20px;
+    background-color: rgb(29, 28, 28);
+    text-align: center;
+    color: rgb(133, 132, 132);
+    font-size: 15px;
+     align-content: center;
+}
+
+body {
+    height: auto;
+    text-align: center;
+             
+}
+
+#titulo_periodicos{
+    background-color: rgb(133, 133, 133);
+    padding: 10px;
+    margin-bottom: 10px;
+    
+}
+
+/* Estils per al contingut principal amb seccio, aside i main*/
+
+main{
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    height: 1000px;
+    
+}
+
+
+
+section{
+    width: 79%;
+    background-color: rgb(147, 148, 147);
+    float: left;
+    height: 100%;
+    padding: 10px;
+    
+}
+
+aside{
+    width: 19%;
+    background-color: rgb(69, 69, 70);
+    float: left;
+    height: 50%;
+    border-left: solid 3px black;
+    
+}
+
+aside div{
+    background-color: rgb(69, 69, 70);
+    height: 100%;
+    box-sizing: border-box;
+    
+}
+
+div h3{
+    padding: 10px;
+    background-color: rgb(133, 133, 133);
+
+}
+
+div ul{
+    margin-top: 30px;
+}
+
+section img {
+height: auto;
+width: auto;
+
+}
+
+
+
+
+#info-dana {
+    background-color: rgb(133, 133, 133);
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px rgb(124, 124, 124);
+    margin-bottom: 10px;
+}
+
+#imatge-portada {
+    background-color: rgb(133, 133, 133);
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px rgb(124, 124, 124); 
+    margin-bottom: 10px;
+    padding: 10px;
+    
+}
+
+#imagen {
+    width: 500px;
+    height: 350px;
+    border: solid 5px black;
+    border-radius:5px;
+}
+
+#context-tecnic {
+    background-color: rgb(133, 133, 133);
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px rgb(124, 124, 124);
+    margin-bottom: 10px;
+}
+
+#cronologia {
+    background-color: rgb(133, 133, 133);
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px rgb(124, 124, 124);
+    margin-bottom: 10px;
+}

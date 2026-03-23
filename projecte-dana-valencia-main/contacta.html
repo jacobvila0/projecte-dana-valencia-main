@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/contacta.css">
+
+    <title>CONTACTA</title>
+
+</head>
+<body>
+
+    <header>
+
+        <b><h1 id="inicio">LA DANA A VALENCIA</h1></b>
+        
+        <img id="logo" src="imatges\logo.jpg" alt="">
+
+    
+
+    </header>
+    
+    <main>
+    
+    <section> 
+        
+       <h2 id="titol">Formulari de contacte sobre la DANA</h1>
+  <form action="" method="post">
+    
+    <fieldset>
+
+        <legend>Dades personals</legend>
+
+    <label for="nom">Nom complet:</label>
+    <input type="text" id="nom" name="nom" placeholder="Escriu el teu nom" required><br><br>
+
+    <label for="email">Correu electrònic:</label>
+    <input type="email" id="email" name="email" placeholder="exemple@correu.com" required><br><br>
+
+    <label for="any">Any de naixement:</label>
+    <input type="number" id="any" name="any" min="1900" max="2025"><br><br>
+
+    </fieldset>
+
+    <fieldset>
+
+        <legend>Experiència amb la DANA</legend>
+
+    <p>Has patit danys per la DANA a València?</p>
+    <input type="radio" id="si" name="danys" value="sí" required>
+    <label for="si">Sí</label>
+    <input type="radio" id="no" name="danys" value="no">
+    <label for="no">No</label><br><br>
+
+    <input type="checkbox" id="ajuda" name="ajuda" value="necessita">
+    <label for="ajuda">Necessite ajuda o assessorament</label><br><br>
+
+    </fieldset>
+
+    <fieldset>
+
+        <legend>Detalls addicionals</legend>
+
+    <label for="municipi">Municipi afectat:</label>
+    <select id="municipi" name="municipi" required>
+      <option value="">Selecciona</option>
+      <option value="benetuser">Benetúser</option>
+      <option value="algemesi">Algemesí</option>
+      <option value="paiporta">Paiporta</option>
+      <option value="altres">Altres</option>
+    </select><br><br>
+
+    <label for="comentaris">Comentaris o experiència personal:</label><br>
+    <textarea id="comentaris" name="comentaris" rows="5" cols="40" placeholder="Explica la teva experiència"></textarea><br><br>
+   
+    </fieldset>
+
+    <button id="enviar" type="submit">Enviar</button>
+
+  </form>
+
+    </section>
+    <aside>
+   <nav>
+        <li><a target="_blank" href="index.html">INDEX</a></li>
+        <li><a target="_blank" href="videos.html">VIDEOS</a></li>
+        <li><a target="_blank" href="horari.html">HORARI</a></li>
+        <li><a target="_blank" href="contacta.html">CONTACTA</a></li>
+    </nav>
+
+    <div>
+        <h3 id="titulo_periodicos">PERIODICOS INFORMATIVOS</h3>
+        <ul>
+            <li><a target="_blank" href="https://www.levante-emv.com/comunitat-valenciana/2024/10/30/dana-deja-15-muertos-5000-84449391.html">LEVANTE EMV</a></li>
+            <li><a target="_blank" href="https://www.abc.es/espana/comunidad-valenciana/dana-valencia-inundaciones-lluvias-derrumbes-20241029000054-nt.html">ABC</a></li>
+            <li><a target="_blank" href="https://elpais.com/espana/comunidad-valenciana/2024-10-30/la-dana-deja-al-menos-15-muertos-y-mas-de-5-000-desalojados-en-la-comunidad-valenciana.html">EL PAÍS</a></li>
+        </ul>
+    </div>
+
+    </aside>
+
+    </main>
+    
+    <footer class="peu_pagina">
+     
+        <p>© 2024 La Dana a València &nbsp Jacob Vila Ferrero i Jaume Sancho Cháfer</p>
+
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>PLANTILLA</title>
+
+</head>
+<body>
+
+    <header>
+
+        <b><h1 id="inicio">LA DANA A VALENCIA</h1></b>
+        
+        <img id="logo" src="imatges\logo.jpg" alt="">
+
+    
+
+    </header>
+    
+    <main>
+    
+    <section> 
+        
+        <div id="info-dana"> 
+            <p>Pàgina sobre la <b>DANA</b> a València <b>29/10/2024</b>.</p>
+            <p>Lloc web informatiu dedicat a analitzar el fort episodi de pluges i inundacions que va tenir lloc a la Comunitat Valenciana a causa d’una DANA, un fenomen que va marcar un abans i un desprès en la història recent de la regió.</p>
+            
+            <img class="imatge-portada" src="imatges/imatge-portada.jpg" alt="Impacte de la inundació a l'Horta Sud">
+            
+            <p>L'episodi es va caracteritzar per una pluja torrencial que, en qüestió d'hores, va desbordar barrancs històricament secs, atrapant milers de persones en vivendes i carreteres.</p>
+        </div>
+
+        <div class="context-tecnic">
+            <h2>Què és una DANA?</h2>
+            <p>Una Depressió Aïllada en Nivells Alts es produeix quan un embossament d'aire fred es separa del corrent en jet i xoca amb l'aire càlid i humit del Mediterrani.</p>
+            <p>En aquest cas, la persistència de la tempesta sobre les mateixes zones de les conques dels rius Magre i Túria, i el barranc de l'Poyo, va ser el desencadenant del desastre.</p>
+        </div>
+
+        <div class="cronologia">
+            <h2>Cronologia dels fets (29/10/2024)</h2>
+            <ul class="llista-dades">
+                <li><b>08:00h:</b> AEMET puja l'alerta a nivell roig per a tota la província.</li>
+                <li><b>12:00h:</b> Primeres inundacions en localitats de la Ribera Alta com Utiel i Requena.</li>
+                <li><b>18:00h:</b> El barranc de l'Poyo es desborda al seu pas per Torrent, Paiporta i Picanya.</li>
+                <li><b>20:11h:</b> S'envia l'alerta general als telèfons mòbils de tota la població.</li>
+            </ul>
+        </div>
+
+    </section>
+    <aside>
+   <nav>
+        <li><a target="_blank" href="index.html">INDEX</a></li>
+        <li><a target="_blank" href="videos.html">VIDEOS</a></li>
+        <li><a target="_blank" href="horari.html">HORARI</a></li>
+        <li><a target="_blank" href="contacta.html">CONTACTA</a></li>
+    </nav>
+
+    <div>
+        <h3 id="titulo_periodicos">PERIODICOS INFORMATIVOS</h3>
+        <ul>
+            <li><a target="_blank" href="https://www.levante-emv.com/comunitat-valenciana/2024/10/30/dana-deja-15-muertos-5000-84449391.html">LEVANTE EMV</a></li>
+            <li><a target="_blank" href="https://www.abc.es/espana/comunidad-valenciana/dana-valencia-inundaciones-lluvias-derrumbes-20241029000054-nt.html">ABC</a></li>
+            <li><a target="_blank" href="https://elpais.com/espana/comunidad-valenciana/2024-10-30/la-dana-deja-al-menos-15-muertos-y-mas-de-5-000-desalojados-en-la-comunidad-valenciana.html">EL PAÍS</a></li>
+        </ul>
+    </div>
+
+    </aside>
+
+    </main>
+    
+    <footer class="peu_pagina">
+     
+        <p>© 2024 La Dana a València &nbsp Jacob Vila Ferrero i Jaume Sancho Cháfer</p>
+
+    </footer>
+    
+</body>
+</html>
